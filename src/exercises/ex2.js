@@ -2,7 +2,9 @@ const clickMeButton = document.getElementById('click-me-button');
 const message = document.getElementById('message');
 
 function showMessage() {
-  // Your code here: Change the text content of the 'message' paragraph.
+  message.textContent = 'Message has been updated!';
 }
 
 clickMeButton.addEventListener('click', showMessage);
+
+module.exports = showMessage;
