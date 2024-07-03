@@ -7,4 +7,4 @@ function showMessage() {
 
 clickMeButton.addEventListener('click', showMessage);
 
-module.exports = showMessage;
+
