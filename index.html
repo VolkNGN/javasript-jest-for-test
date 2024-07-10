@@ -22,11 +22,11 @@
 
         <!-- Ex4 -->
         <button id="remove-weather-button">Remove weather</button>
-
         
-        <div id="weather-container"></div>
-            <div id="weather"></div>
-            <p>Chargement des données météo...</p>
+        <div id="weather-container">
+            <div id="weather">
+                <p>Chargement des données météo...</p>
+            </div>
         </div>
 
         <!-- Ex5 -->
@@ -58,5 +58,13 @@
     <script type="module" src="./src/exercises/displayweather.js"></script>
     <script type="text/javascript" src="./src/exercises/ex5.js"></script>
     <script type="text/javascript" src="./src/exercises/ex6.js"></script>
+    <script type="text/javascript">
+        
+      document.getElementById('remove-weather-button').addEventListener('click', () => {
+        import('./src/exercises/ex4.js').then(module => {
+          module.removeWeatherContainer();
+        });
+      });
+    </script>
 </body>
 </html>

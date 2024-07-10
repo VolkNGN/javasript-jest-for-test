@@ -25,3 +25,11 @@ export const fetchData = async () => {
     console.error('There has been a problem with your fetch operation:', error);
   }
 };
+
+// Fonction pour supprimer le conteneur météo
+export const removeWeatherContainer = () => {
+  const weatherContainer = document.getElementById('weather-container');
+  if (weatherContainer) {
+    weatherContainer.remove();
+  }
+};
