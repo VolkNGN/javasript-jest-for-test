@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,30 +10,53 @@
         <div id="element" class="initial-class"></div>
 
         <!-- Ex2 -->
-            <button id="click-me-button">Click Me</button>
-            <p id="message">Hello, World!</p>
+        <button id="click-me-button">Click Me</button>
+        <p id="message">Hello, World!</p>
 
         <!-- Ex3 -->
-            <form id="email-form">
-                <input type="text" id="email-input" placeholder="Enter your email">
-                <button type="submit">Submit</button>
-            </form>
-            <p id="validation-message"></p>
+        <form id="email-form">
+            <input type="text" id="email-input" placeholder="Enter your email">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="validation-message"></p>
 
         <!-- Ex4 -->
-            <button id="remove-paragraph-button">Remove Paragraph</button>
-            <div id="paragraph-container">
-                <p id="paragraph">This is a paragraph</p>
-            </div>
+        <button id="remove-weather-button">Remove weather</button>
+
+        
+        <div id="weather-container"></div>
+            <div id="weather"></div>
+            <p>Chargement des données météo...</p>
+        </div>
 
         <!-- Ex5 -->
-            <div id="hover-area" style="width: 200px; height: 200px; background-color: lightblue;"></div>
-            <p id="interaction-result">Hover over the area.</p>
+        <div id="hover-area" style="width: 200px; height: 200px; background-color: lightblue;"></div>
+        <p id="interaction-result">Hover over the area.</p>
+
+        <!-- Ex6 -->
+        <div id="exercise-6">
+            <h2>Exercise 6</h2>
+            
+            <button id="find-max-button">Find Max Value</button>
+            <p id="max-result">Result will be displayed here.</p>
+
+            <button id="remove-duplicates-button">Remove Duplicates</button>
+            <p id="duplicates-result">Result will be displayed here.</p>
+
+            <button id="includes-value-button">Check If Includes Value</button>
+            <p id="includes-result">Result will be displayed here.</p>
+
+            <button id="sort-array-button">Sort Array</button>
+            <p id="sort-result">Result will be displayed here.</p>
+        </div>
     </div>
 
     <script type="text/javascript" src="./src/exercises/ex1.js"></script>
     <script type="text/javascript" src="./src/exercises/ex2.js"></script>
     <script type="text/javascript" src="./src/exercises/ex3.js"></script>
-
+    <script type="module" src="./src/exercises/ex4.js"></script>
+    <script type="module" src="./src/exercises/displayweather.js"></script>
+    <script type="text/javascript" src="./src/exercises/ex5.js"></script>
+    <script type="text/javascript" src="./src/exercises/ex6.js"></script>
 </body>
 </html>

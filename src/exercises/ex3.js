@@ -24,5 +24,7 @@ if (typeof document !== 'undefined') {
   });
 }
 
-// Exporter la fonction pour les tests
-module.exports = { validateEmail };
+// Exporter la fonction pour les tests uniquement si le module est défini (c'est-à-dire dans Node.js)
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { validateEmail };
+}
